@@ -24,33 +24,6 @@ Expo CLI: You will need Expo CLI to run the app.
 Steps to Run the Project
 Clone the repository to your local machine:
 
-bash
-Copy code
-git clone https://github.com/your-username/go-grab-todo.git
-Navigate to the project directory:
-
-bash
-Copy code
-cd go-grab-todo
-Install dependencies: Run the following command to install the required dependencies:
-
-bash
-Copy code
-npm install
-Install additional libraries for React Navigation and SQLite:
-
-bash
-Copy code
-npm install @react-navigation/native
-npm install @react-navigation/stack
-expo install expo-sqlite
-expo install react-native-screens react-native-safe-area-context
-Run the app: Start the app using Expo by running:
-
-bash
-Copy code
-expo start
-Test on a mobile device: Use the Expo Go app on your Android/iOS device to scan the QR code that appears in the Expo Developer Tools, and the app will run on your phone.
 
 __Design Decisions__
 SQLite for Data Storage: We chose SQLite for local storage as it offers a lightweight and reliable solution for persisting task and group data on the device. This allows the app to function even when offline, ensuring that no data is lost.
@@ -69,5 +42,5 @@ State Management Across Screens: Handling state between different screens (such 
 Validation and Error Handling: Implementing form validation (e.g., preventing empty task or group names) and providing feedback to the user in case of errors (such as database failures) helped enhance the user experience and ensure data consistency.
 
 __Conclusion__
-The Go-Grab TODO App is a simple yet powerful tool for managing tasks efficiently. It uses SQLite for local storage to ensure persistence, even when offline, and provides a clean, user-friendly interface. Through thoughtful design and careful state management, the app ensures that users can keep track of their tasks easily.
+The TODO App is a simple yet powerful tool for managing tasks efficiently. It uses SQLite for local storage to ensure persistence, even when offline, and provides a clean, user-friendly interface. Through thoughtful design and careful state management, the app ensures that users can keep track of their tasks easily.
 
